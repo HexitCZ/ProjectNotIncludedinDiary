@@ -2,21 +2,13 @@
 public class Krychle {
 	int strana;
 
-	public int getStrana() {
-		return strana;
-	}
-
-	public void setStrana(int strana) {
-		this.strana = strana;
-	}
+	// Odstraneni nevyuziteho setteru a getteru.
 
 	public Krychle(int strana) {
 		this.strana = strana;
 	}
 
-	public Krychle() {
-		
-	}
+	// Odstraneni prazdneho konstruktoru.
 
 	int povrch() {
 		return 6 * strana * strana;
@@ -26,9 +18,8 @@ public class Krychle {
 		return strana * strana * strana;
 	}
 
-	
-	public  String toString() {
-		return "Krychle s objemem :" + this.objem() + " povrchem :" + povrch()+" a stranou :"+strana;
+	public String toString() {
+		return "Krychle s objemem :" + this.objem() + " povrchem :" + povrch() + " a stranou :" + strana;
 	}
 
 }
